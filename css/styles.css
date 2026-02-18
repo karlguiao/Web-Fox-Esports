@@ -1,0 +1,1011 @@
+/* CSS styles for Web Fox Esports */
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul,
+figure,
+figcaption,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* CSS styles for body and images */
+
+* {
+  font-family: "Saira Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 200%;
+  /* or 50px */
+  text-align: justify;
+  color: #000000;
+}
+
+img {
+  position: relative;
+  max-width: 100%;
+}
+
+/* CSS styles for mobile nav and map */
+
+nav .mobile-nav {
+  display: inline;
+}
+
+.map {
+  border: 2px solid #000;
+  width: 95%;
+  height: 50%;
+  margin-bottom: 40px;
+}
+
+/* ===================================================================== */
+/* STYLE RULES FOR MOBILE VIEWPORT */
+
+/* Mobile Viewport: Basic styling for the header */
+header {
+  position: static;
+  background-color: #feb87e;
+  top: 0;
+}
+
+/* Mobile Viewport: Styling for the logo */
+#wfe-logo {
+  width: 100%;
+  max-width: 25%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* CSS styles for hamburger menu */
+.mobile-nav a {
+  color: #fff;
+  font-family: "Saira Condensed", sans-serif;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+  background-color: #feb87e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 10000;
+  background-color: #feb87e;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#menu-links {
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  background-color: #feb87e;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+  padding: 1em;
+}
+
+#menu {
+  float: right;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+  display: inline-block;
+}
+
+.tablet-desktop,
+#menu-links {
+  display: none;
+}
+
+/* CSS styles for the main section */
+
+h1 {
+  font-family: "Saira Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: #f5934a;
+  text-align: center;
+  padding: 0.5em;
+}
+
+main p {
+  font-family: "Saira Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 200%;
+  text-align: justify;
+  margin: 0 1em;
+}
+
+main ul {
+  margin: 0.5em 0.5em 1.5em 3em;
+}
+
+/* Mobile Viewport: Style rules for Home Page */
+.all-viewport li {
+  padding: 0 1em 0 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.contact-join span {
+  color: #f5934a;
+}
+
+.mobile a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.mobile .tel-link {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.mobile span {
+  padding-left: 1em;
+}
+
+/* Mobile Viewport: Style rules for audio */
+.soundtrack {
+  text-align: center;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+.soundtrack h1 {
+  padding-bottom: 0;
+}
+
+.soundtrack h3 {
+  text-align: center;
+}
+
+video {
+  max-width: 90%;
+  display: block;
+  margin: auto;
+  padding-bottom: 3em;
+}
+
+/* Mobile Viewport: Style rules for About Page */
+.about img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 0.5em;
+}
+
+.vision-mission p:last-of-type {
+  margin-bottom: 1.5em;
+}
+
+/* Mobile Viewport: Style rules for Community Page */
+.community p:first-of-type {
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin: 20px auto;
+}
+
+.frame img {
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+}
+
+.pic-text {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  font-size: 1.3em;
+}
+
+.frame:hover {
+  opacity: 1;
+  box-shadow: 8px 8px 10px #808080;
+  transform: translateY(10px);
+}
+
+/* Mobile Viewport: Style rules for Membership Page */
+.mobile p {
+  padding-top: 0;
+  font-size: 20px;
+}
+
+.mobile h3 {
+  font-weight: bold;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+/* Mobile Viewport: Style rules for form element */
+form {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#form {
+  background-color: #feb87e;
+  padding: 2%;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #f5934a, #feb87e);
+  margin-top: 1em;
+}
+
+#form h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  color: #fff;
+}
+
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: 1%;
+  font-size: 70%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+fieldset p {
+  font-size: 1em;
+}
+
+option {
+  font-size: 90%;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+  font-size: 1em;
+}
+
+select {
+  width: 70%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  width: 70%;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile Viewport: Style rules for buttons */
+.btn {
+  display: block;
+  color: white;
+}
+
+form #submit,
+form #reset {
+  margin: 0 10px;
+  border: none;
+  padding: 1%;
+  background-color: #feb87e;
+  color: #fff;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #ff6f00;
+}
+
+#reset:hover {
+  background-color: #ff6f00;
+}
+
+form #submit {
+  margin: 1em auto;
+}
+
+form #reset {
+  margin: 0 auto;
+}
+
+form div {
+  text-align: center;
+}
+
+/* Mobile Viewport: Style rules for Contact Page */
+#contact {
+  text-align: center;
+}
+
+#contact h2,
+h4 {
+  text-align: center;
+  padding: 0 10px;
+}
+
+#contact h2 {
+  font-weight: bold;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+.tel-link a {
+  color: #fff;
+  background-color: #feb87e;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+/* Mobile Viewport: Style rules for footer */
+.social {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+.social img {
+  max-width: 15%;
+  filter: invert();
+  vertical-align: bottom;
+}
+
+footer .social a {
+  text-decoration: none;
+  margin: 0 0.2em;
+}
+
+footer {
+  background-color: #feb87e;
+  padding: 0.5em;
+}
+
+footer p,
+footer p a {
+  font-family: "PT Serif", sans-serif;
+  text-align: center;
+  font-size: 0.65em;
+  color: #fff;
+}
+
+/* ===================================================================== */
+/* MEDIA QUERY FOR TABLET VIEWPORT */
+/* Tablet Viewport: Show tablet-desktop class, hide mobiles class */
+@media screen and (min-width: 630px), print {
+  .tablet-desktop {
+    display: block;
+  }
+
+  .mobile,
+  .mobile-nav {
+    display: none;
+  }
+
+  /* Talet Viewport: Style rule for header */
+  header {
+    position: static;
+    background-color: #feb87e;
+    padding: 1em 3em 0.2em 3em;
+  }
+
+  /* Tablet Viewport: Style rule for logo */
+  #wfe-logo {
+    width: 100%;
+    max-width: 15%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav {
+    padding: 1%;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 0;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.1em 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  /* Tablet Viewport: Style rules for main content area */
+  h1 {
+    font-family: "Saira Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #f5934a;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  main p {
+    font-family: "Saira Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 200%;
+    text-align: justify;
+    margin: 0 1em;
+  }
+
+  main ul {
+    margin: 0.5em 0.5em 1.5em 3em;
+  }
+
+  /* Tablet Viewport: Style rules for Home Page */
+  .contact-join a {
+    text-decoration: none;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .contact-join span {
+    color: #f5934a;
+  }
+
+  .all-viewport li {
+    padding: 0 1em 0 0;
+  }
+
+  /* Tablet Viewport: Style rules for audio */
+  .soundtrack {
+    text-align: center;
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
+
+  .soundtrack h1 {
+    padding-bottom: 0;
+  }
+
+  .soundtrack h3 {
+    text-align: center;
+  }
+
+  video {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 3em;
+  }
+
+  /* Tablet Viewport: Style rules for About Page */
+  .about p:first-of-type {
+    text-align: center;
+  }
+
+  .offers {
+    clear: left;
+    background-color: #feb87e;
+    padding: 1% 2%;
+    margin: 0 0.5em 2em 0.5em;
+    border-radius: 20px;
+  }
+
+  .offers p {
+    padding: 0;
+    margin: 0.5em;
+    color: #fff;
+  }
+
+  dt {
+    font-weight: bold;
+    color: #f5934a;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+  dd {
+    color: #fff;
+  }
+
+  .about img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 0.5em;
+  }
+
+  /* Tablet Viewport: Style rules for Community Page */
+  .community p:first-of-type {
+    text-align: center;
+    padding-bottom: 1.5em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin: auto;
+    max-width: fit-content;
+  }
+
+  .frame img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .pic-text {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .frame:hover {
+    opacity: 1;
+    box-shadow: 8px 8px 10px #808080;
+    transform: translateY(10px);
+  }
+
+  /* Tablet Viewport: Animation */
+  @-webkit-keyframes text-animation {
+    0% {
+      font-size: 1.25em;
+    }
+    50% {
+      font-size: 1.5em;
+    }
+    100% {
+      font-size: 1.5em;
+    }
+  }
+
+  @keyframes text-animation {
+    0% {
+      font-size: 1.25em;
+    }
+    50% {
+      font-size: 1.5em;
+    }
+    100% {
+      font-size: 1.5em;
+    }
+  }
+
+  figcaption {
+    -webkit-animation-name: text-animation;
+    animation-name: text-animation;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+  }
+
+  .bulletin-board {
+    background-color: #feb87e;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.25);
+    margin: 2em;
+    padding: 0.5em;
+  }
+
+  .bulletin-board p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    line-height: 75px;
+    font-size: 35px;
+    line-height: 70px;
+  }
+
+  /* Tablet Viewport: Style rules for Membership Page */
+  /* Style rules for table */
+  table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+  }
+
+  .table {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+    font-family: "Saira Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #f5934a;
+    text-align: center;
+  }
+
+  th,
+  td {
+    padding: 1%;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  th {
+    background-color: #f5934a;
+    color: #fff;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #feb87e;
+  }
+
+  /* Tablet Viewport: Style rules for form element */
+  form {
+    width: 70%;
+    margin: 0 auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #form {
+    background-color: #feb87e;
+    padding: 2%;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #f5934a, #feb87e);
+    margin-top: 3em;
+  }
+
+  #form h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  fieldset,
+  input,
+  select,
+  textarea {
+    margin-bottom: 1%;
+    font-size: 70%;
+  }
+
+  fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  fieldset p {
+    font-size: 1em;
+  }
+
+  option {
+    font-size: 90%;
+  }
+
+  label {
+    display: block;
+    padding-top: 3%;
+  }
+
+  select {
+    width: 50%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"] {
+    width: 30%;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Tablet Viewport: Style rules for buttons */
+  .btn {
+    display: block;
+  }
+
+  form #submit,
+  form #reset {
+    margin: 0 10px;
+    border: none;
+    padding: 1%;
+    background-color: #f5934a;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  form #submit {
+    margin: 1em auto;
+  }
+
+  form #reset {
+    margin: 0 auto;
+  }
+
+  /* Tablet Viewport: Style rules for Contact Page */
+  #contact {
+    text-align: center;
+  }
+
+  #contact h2,
+  h4 {
+    text-align: center;
+  }
+
+  #contact h2 {
+    font-weight: bold;
+  }
+
+  #contact a {
+    text-decoration: none;
+  }
+
+  .map {
+    width: 600px;
+    height: 450px;
+  }
+
+  form div {
+    text-align: center;
+  }
+
+  /* Tablet Viewport: Style rules for footer */
+  .social {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .social img {
+    max-width: 10%;
+    filter: invert();
+    vertical-align: bottom;
+  }
+
+  footer .social a {
+    text-decoration: none;
+    margin: 0 0.2em;
+  }
+
+  footer {
+    background-color: #feb87e;
+    padding: 0.5em;
+  }
+
+  footer p,
+  footer p a {
+    font-family: "PT Serif", sans-serif;
+    text-align: center;
+    font-size: 0.65em;
+    color: #fff;
+  }
+}
+
+/* ===================================================================== */
+/* MEDIA QUERY FOR DESKTOP VIEWPORT */
+@media screen and (min-width: 1015px), print {
+  /*769*/
+  /* Desktop Viewport: Style rules for main content area  */
+  h1 {
+    font-family: "Saira Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #f5934a;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  video {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 3em;
+  }
+
+  .mobile-nav,
+  .mobile {
+    display: none;
+  }
+
+  /* Desktop Viewport: Style rule for header  */
+  header {
+    background-color: #feb87e;
+    padding: 1em 3em 3em 3em;
+  }
+
+  /* Desktop Viewport: Style rule for logo  */
+  #wfe-logo {
+    width: auto;
+    max-width: 80px;
+    height: auto;
+    bottom: auto;
+    right: auto;
+    float: left;
+  }
+
+  /* Desktop Viewport: Style rule for about page image  */
+  .about img {
+    max-width: 50%;
+  }
+
+  /* Desktop Viewport: Style rules for nav area  */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  nav li a:hover {
+    color: #f5934a;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: scale(1.3);
+  }
+
+  /* Desktop Viewport: Style rule for table  */
+  table {
+    margin: 0 auto;
+  }
+
+  /* Desktop Viewport: Style rules for form  */
+  form {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ===================================================================== */
+/* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
+@media screen and (min-width: 1921px) {
+  #container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  table {
+    width: 80%;
+  }
+}
+
+/* ===================================================================== */
+/* MEDIA QUERY FOR PRINT */
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
