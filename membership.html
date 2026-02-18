@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Membership Type - Registration | Web Fox Esports</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Fox Esports has many membership classes for future members to maximize the given opportunities and resources they will gain upon joining the team."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav">
+        <div id="menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="community.html">Community</a>
+          <a href="membership.html">Membership</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+          <div id="menu">&#9776;</div>
+        </a>
+      </nav>
+
+      <header id="header">
+        <a href="index.html">
+          <img
+            id="wfe-logo"
+            src="images/webfoxesports-logo.png"
+            alt="Web Fox Esports logo"
+          />
+        </a>
+        <nav class="tablet-desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Use the main area to add the main content on the webpage. -->
+      <main id="content">
+        <div class="mobile">
+          <h3>Membership Type:</h3>
+          <p>Basic Membership: 1 Month - $15</p>
+          <p>Standard Membership: 3 Months - $40</p>
+          <p>Premium Membership: 6 Months - $75</p>
+          <p>Elite Membership: 12 Months - $140</p>
+          <p>Pro Membership: Lifetime - $300</p>
+          <p>Trial Membership: 1 Week - Free</p>
+        </div>
+
+        <div class="table tablet-desktop">
+          <table>
+            <!-- Start Table -->
+            <caption>
+              Membership Information
+            </caption>
+            <tr>
+              <!-- Row 1-->
+              <th>Membership Type</th>
+              <th>Duration</th>
+              <th>Monthly Fee</th>
+            </tr>
+            <tr>
+              <!-- Row 2 -->
+              <td>Basic</td>
+              <td>1 Month</td>
+              <td>&dollar;15</td>
+            </tr>
+            <tr>
+              <!-- Row 3 -->
+              <td>Standard</td>
+              <td>3 Months</td>
+              <td>&dollar;40</td>
+            </tr>
+            <tr>
+              <!-- Row 4 -->
+              <td>Premium</td>
+              <td>6 Months</td>
+              <td>&dollar;75</td>
+            </tr>
+            <tr>
+              <!-- Row 5 -->
+              <td>Elite</td>
+              <td>12 Months</td>
+              <td>&dollar;140</td>
+            </tr>
+            <tr>
+              <!-- Row 6 -->
+              <td>Pro</td>
+              <td>Lifetime</td>
+              <td>&dollar;300</td>
+            </tr>
+            <tr>
+              <!-- Row 7 -->
+              <td>Trial</td>
+              <td>1 Week Free</td>
+              <td>Free</td>
+            </tr>
+          </table>
+          <!-- End Table -->
+        </div>
+
+        <div id="form">
+          <h1>Registration Form</h1>
+
+          <form class="form-grid">
+            <!-- Start form -->
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="fullName">Full Name:</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your Full Name"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your Email Address"
+                required
+              />
+
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your Phone Number"
+                required
+              />
+
+              <label for="age"> Age:</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="(13 years old and above)"
+                min="13"
+                max="120"
+                required
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Development Goals</legend>
+              <p>Reasons for joining the Esports Team:</p>
+
+              <label for="impskills"
+                ><input
+                  type="checkbox"
+                  name="reason"
+                  id="impskills"
+                  value="Improve my skills"
+                />Improve my skills</label
+              >
+
+              <label for="prof"
+                ><input
+                  type="checkbox"
+                  name="reason"
+                  id="prof"
+                  value="Become a professional"
+                />Become a professional</label
+              >
+
+              <label for="meetplayers"
+                ><input
+                  type="checkbox"
+                  name="reason"
+                  id="meetplayers"
+                  value="Meet more players"
+                />Meet more players</label
+              >
+
+              <label for="others"
+                ><input
+                  type="checkbox"
+                  name="others"
+                  id="others"
+                  value="Others"
+                />Others</label
+              >
+            </fieldset>
+
+            <fieldset>
+              <legend>Gaming and Contribution</legend>
+              <label for="year"
+                >When did you start having interest in esports?</label
+              >
+              <select name="year" id="year">
+                <option value="default">(select year)</option>
+                <option value="current">This Year</option>
+                <option value="2020">2020</option>
+                <option value="2015">2015</option>
+                <option value="2010">2010</option>
+                <option value="2005">2005</option>
+              </select>
+
+              <label for="game"
+                >What game do you want to play in the esports team?</label
+              >
+              <select name="game" id="game">
+                <option value="default">(select game)</option>
+                <option value="lol">League of Legends</option>
+                <option value="valo">Valorant</option>
+                <option value="count">Counter Strike</option>
+                <option value="dota">Dota 2</option>
+                <option value="other">Other</option>
+              </select>
+
+              <label for="contribute"
+                >What are your strenghts and what can you contribute to the
+                team?</label
+              >
+              <textarea
+                id="contribute"
+                name="contribute"
+                placeholder="Enter your answer here..."
+                rows="7"
+                cols="40"
+              ></textarea>
+            </fieldset>
+            <div class="btn">
+              <input type="submit" id="submit" value="submit" class="btn" />
+              <input type="reset" id="reset" value="reset" class="btn" />
+            </div>
+          </form>
+          <!-- End form -->
+        </div>
+      </main>
+
+      <footer>
+        <div class="social">
+          <a href="https://www.facebook.com/christructure" target="_blank">
+            <img
+              src="images/facebook-logo.png"
+              alt="black and white Facebook logo"
+            />
+          </a>
+          <a href="https://www.instagram.com/christructure" target="_blank">
+            <img
+              src="images/instagram-logo.png"
+              alt="black and white Instagram logo"
+            />
+          </a>
+          <a href="https://www.tiktok.com/@skaarlzky" target="_blank">
+            <img
+              src="images/tiktok-logo.png"
+              alt="black and white Tiktok logo"
+            />
+          </a>
+        </div>
+        <div class="copyright">
+          <p>&copy; Copyright 2024. Web Fox Esports. All rights reserved.</p>
+          <p><a href="mailto:webfox@esports.net">webfoxesports.net</a></p>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
