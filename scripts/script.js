@@ -205,34 +205,3 @@ function updateProgressBarTop() {
   const scrolled = (scrollTop / docHeight) * 100;
   document.getElementById("top-progress-bar").style.width = scrolled + "%";
 }
-
-// Cursor Effects
-const cursor = document.createElement("div");
-cursor.id = "custom-cursor";
-document.body.appendChild(cursor);
-
-cursor.style.width = "20px";
-cursor.style.height = "20px";
-cursor.style.border = "2px solid #F5934A";
-cursor.style.borderRadius = "50%";
-cursor.style.position = "fixed";
-cursor.style.pointerEvents = "none";
-cursor.style.transform = "translate(-50%, -50%)";
-cursor.style.transition = "transform 0.1s ease, background-color 0.2s ease";
-cursor.style.zIndex = 9999;
-
-document.addEventListener("mousemove", (e) => {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
-});
-
-document.querySelectorAll("a, button").forEach((el) => {
-  el.addEventListener("mouseenter", () => {
-    cursor.style.transform = "translate(-50%, -50%) scale(1.8)";
-    cursor.style.backgroundColor = "rgba(245, 147, 74, 0.3)";
-  });
-  el.addEventListener("mouseleave", () => {
-    cursor.style.transform = "translate(-50%, -50%) scale(1)";
-    cursor.style.backgroundColor = "transparent";
-  });
-});
